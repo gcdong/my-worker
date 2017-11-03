@@ -41,9 +41,19 @@
 <script>
 export default {
     name: 'HelloWorld',
-    data () {
+    data() {
         return {
             msg: 'Welcome to Your Vue.js App'
+        }
+    },
+    mounted() {
+        const a = 1
+        const b = 2
+        this.test(a, b)
+    },
+    methods: {
+        test() {
+            console.log('12')
         }
     }
 }
